@@ -1,9 +1,9 @@
 # W3F Grant Proposal
 
-- **Project Name:** substrate IPFS utilities
+- **Project Name:** Substrate IPFS Utilities
 - **Team Name:** [TDSoftware](https://www.tdsoftware.de/)
-- **Payment Address:**
-- **Level:** 
+- **Payment Address:** 0x8Db0972d9F40357526B879A002d60CCf6B4a8882
+- **Level:** 3
 
 
 
@@ -122,8 +122,8 @@ A concept and solution draft was created as part of this application and can be 
 ### Milestone 1 - Research and PoC implementation on upload part
 
 - **Estimated duration:** 1 Month
-- **FTE: 2
-- **Costs:
+- **FTE:** 2
+- **Costs:** 44.720 DAI
 
 After the first research, the PoC pallet implementation will be developed. The goal of milestone 1, is a fully working round trip (except the redirect feature). A PoC client, reading a file, calling an extrinsic and uploading the content of a file,, will be developed. The CID information from IPFS will be stored in the pallet, then the uploaded file is verified by other IPFS tools.
 
@@ -140,7 +140,7 @@ After the first research, the PoC pallet implementation will be developed. The g
 
 - **Estimated Duration:** 1 Month
 - **FTE:** 2
-- **Costs:**
+- **Costs:** 44.720
 
 The goal of the second milestone is to redirect utilities of Substrate. A gRPC request can be based on a PRG mechanism to redirect to any file server, which is not limited by IPFS.
 
@@ -154,8 +154,8 @@ The goal of the second milestone is to redirect utilities of Substrate. A gRPC r
 ### Milestone 3 - Integration and Benchmark
 
 - **Estimated Duration:** 2 Months
-- **FTE: 2
-- **Costs:
+- **FTE:** 2
+- **Costs:** 89.440 DAI
 
 The goal of the third milestone is to have several features and APIs that cover potential use cases.
 
