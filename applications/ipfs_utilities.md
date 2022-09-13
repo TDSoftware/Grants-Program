@@ -21,6 +21,7 @@ In NFT scenario, it would need much more affairs to the validation process on th
 
 This project will follow a different approach. The upload and linking of a file to an NFT e.g. can be done by clients thru one extrinsic. On upload of a file with the IPFS pallet, the pallet will return the ticket id immediately. Once the file is uploaded to IPFS, the CID of the file on IPFS will be stored on chain. The ticket id and CID both can be used to fetch the file via RPC call. While the upload to IPFS is processing, a cache logic can already provide the file based on the ticket id. Once the CID is retrieved and the file is available on IPFS, the cache can be cleared and all fetch requests are redirected to IPFS.
 
+The timing of file accessibility for users is crucial for a web service, and it is hard to make sure in IPFS.  Therefore, A verification request to the public IPFS gateway to check the file we added to IPFS is important.  Once the file can be accessed from the gateway, the upload process will deem complete.  The developer can configure the location of the gateway, and also the system will redirect the requests to the gateway if the file is deemed uploaded completed.  Also, the location format of redirection can be CIDV0 format or CIDV1 format based on the configuration of the developer.  Before the upload is completed, the system could act as a cache server, this feature could be or not be included in the application.
 
 ### Project Details
 
